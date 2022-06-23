@@ -1,0 +1,34 @@
+/* maps */
+$red-social:(
+    facebook: blue,
+    twitter: skyblue,
+    whatsapp: green
+);
+
+@each $nombre, $valor in $red-social{
+    .icon-#{$nombre} {
+        color: $valor;
+    }
+}
+/* colores */
+$colores: (
+    primario: black,
+    secundario: white,
+    base: red
+);
+
+/* mixin */
+
+@mixin boton ($col, $bg){
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #000;
+    box-shadow: 0 0 6px 0 #000;
+    text-decoration: none;
+    margin-bottom: 50px;
+    color: $col;
+    background: $bg;
+}
+.boton--danger{
+    @include boton (black, orange)
+}

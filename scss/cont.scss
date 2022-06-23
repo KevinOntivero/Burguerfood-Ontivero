@@ -1,0 +1,151 @@
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(37, 36, 36);
+    height: auto;
+    width: 100%;
+}
+.header{
+    width: 100%;
+    height: auto;
+    .nav-item{
+        margin: 0 30px;
+        color: #000;
+        border-bottom: 1px solid #fff;
+    }
+    & &__title{
+        text-align: center;
+        background-color: rgb(37, 36, 36);
+        .text{
+            color: #fff;
+        }
+        .parrafo{
+            color: #fff;
+            padding-bottom: 20px;
+            font-size: 1.3rem;
+            font-weight: lighter;
+        }
+    }
+    & &__img{
+        margin: 0 10px;
+        border: 2px solid #fff;
+        box-shadow: 0 0 6px 0 #fff;
+    }
+        
+}
+
+.main{
+    background: url(../img/background.jpg);
+    object-fit: cover;
+    margin: 50px 0;
+    height: 100%;
+    .subtitle{
+        padding: 30px;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 20px;
+    }
+    .container__menu{
+        display: flex;
+        justify-content: space-evenly;
+        cursor: pointer;
+        .btn{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: yellow;
+            color: #000;
+            border: 3px solid red;
+            box-shadow:0 0 6px 0 red ;
+        }
+        .btn--black{
+            @extend .btn;
+            color: #fff;
+            background-color: black;
+        }
+    }
+    .card{
+        margin: 30px 0; 
+
+    }
+    .box{
+        height: auto;
+        margin: 50px 0;
+        .box__title{
+            text-align: center;
+            .subti{
+                color: #fff;
+                padding-top: 30px;
+            }
+            .parrafo{
+                color: rgb(255, 255, 255);
+                font-size: 1.5rem;
+                padding-bottom: 30px;
+            }
+        }
+        .box__img{
+            width: 100%;
+            max-width: 1100px;
+            .box__picture{
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+                margin: 0 75px;
+                margin-bottom: 50px;
+                border: 2px solid #fff;
+                box-shadow: 0 0 6px 0 #fff;
+                
+            }
+        }
+    }
+    .parrafo{
+        color: #fff;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .text{
+        color: rgb(245, 233, 0);
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 40px 0;
+    }
+    .maps{
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+
+.footer{
+    width: 100%;
+    .footer__text{
+        color: #fff;
+        text-align: center;
+    }
+    [class^="footer__item"]{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        margin: 20px;
+
+    }
+    [class^="footer__item"] a{
+        color: #fff;
+        padding: 20px;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+    [class^="footer__item"] a:hover{
+        background: red;
+        color: map-get($colores, primario); /* aplicamos el map-get */
+    }
+}

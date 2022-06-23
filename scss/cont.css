@@ -1,0 +1,215 @@
+/* maps */
+.icon-facebook {
+  color: blue;
+}
+
+.icon-twitter {
+  color: skyblue;
+}
+
+.icon-whatsapp {
+  color: green;
+}
+
+/* colores */
+/* mixin */
+.boton--danger {
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid #000;
+  -webkit-box-shadow: 0 0 6px 0 #000;
+          box-shadow: 0 0 6px 0 #000;
+  text-decoration: none;
+  margin-bottom: 50px;
+  color: black;
+  background: orange;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #252424;
+  height: auto;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+}
+
+.header .nav-item {
+  margin: 0 30px;
+  color: #000;
+  border-bottom: 1px solid #fff;
+}
+
+.header .header__title {
+  text-align: center;
+  background-color: #252424;
+}
+
+.header .header__title .text {
+  color: #fff;
+}
+
+.header .header__title .parrafo {
+  color: #fff;
+  padding-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+.header .header__img {
+  margin: 0 10px;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0 0 6px 0 #fff;
+          box-shadow: 0 0 6px 0 #fff;
+}
+
+.main {
+  background: url(../img/background.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 50px 0;
+  height: 100%;
+}
+
+.main .subtitle {
+  padding: 30px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+}
+
+.main .container__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.main .container__menu .btn, .main .container__menu .btn--black {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  background-color: yellow;
+  color: #000;
+  border: 3px solid red;
+  -webkit-box-shadow: 0 0 6px 0 red;
+          box-shadow: 0 0 6px 0 red;
+}
+
+.main .container__menu .btn--black {
+  color: #fff;
+  background-color: black;
+}
+
+.main .card {
+  margin: 30px 0;
+}
+
+.main .box {
+  height: auto;
+  margin: 50px 0;
+}
+
+.main .box .box__title {
+  text-align: center;
+}
+
+.main .box .box__title .subti {
+  color: #fff;
+  padding-top: 30px;
+}
+
+.main .box .box__title .parrafo {
+  color: white;
+  font-size: 1.5rem;
+  padding-bottom: 30px;
+}
+
+.main .box .box__img {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.main .box .box__img .box__picture {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 75px;
+  margin-bottom: 50px;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0 0 6px 0 #fff;
+          box-shadow: 0 0 6px 0 #fff;
+}
+
+.main .parrafo {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.main .text {
+  color: #f5e900;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.main .maps {
+  text-align: center;
+  padding: 10px;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer .footer__text {
+  color: #fff;
+  text-align: center;
+}
+
+.footer [class^="footer__item"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.footer [class^="footer__item"] a {
+  color: #fff;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.footer [class^="footer__item"] a:hover {
+  background: red;
+  color: black;
+  /* aplicamos el map-get */
+}
+/*# sourceMappingURL=cont.css.map */
